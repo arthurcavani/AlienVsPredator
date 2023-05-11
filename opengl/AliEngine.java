@@ -100,11 +100,11 @@ public class AliEngine extends GLJPanel implements GLEventListener, java.awt.eve
         gl.glEnable(GL.GL_BLEND);
         gl.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_ONE_MINUS_SRC_ALPHA);
 
-        gl.glClearDepth(1.0f);      // set clear depth value to farthest
-        gl.glEnable(GL_DEPTH_TEST); // enables depth testing
-        gl.glDepthFunc(GL_LEQUAL);  // the type of depth test to do
-        gl.glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST); // best perspective correction
-        gl.glShadeModel(GL_SMOOTH); // blends colors nicely, and smoothes out lighting
+        gl.glClearDepth(1.0f);      
+        gl.glEnable(GL_DEPTH_TEST); 
+        gl.glDepthFunc(GL_LEQUAL);  
+        gl.glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+        gl.glShadeModel(GL_SMOOTH); 
        
         //carregar textura
         tex = carregarTextura("/texturas/nave_1.png");
